@@ -65,6 +65,7 @@ Deve ser enviado um objeto no formato JSON no corpo da requisição com os atrib
 |---|---|
 | `id` | Não enviar o id(Matricula), será gerado automáticamente pelo MongoDB. |
 | `name` | Nome do usuário (String). |
+| `email` | E-mail do usuário (String). |
 | `birthDate` | Data de nascimento do usuário (Date). |
 | `password` | Senha do usuário (será criptografada antes de ser gravada no BD) (String). |
 

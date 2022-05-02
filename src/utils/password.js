@@ -2,9 +2,9 @@ const bcrypt = require('bcrypt')
 
 const crypto = async (pwd) => {
     
-    const salt = await bcrypt.genSalt()
+    const salt = bcrypt.genSaltSync()
 
-    const password = await bcrypt.hash(pwd, salt)
+    const password = bcrypt.hashSync(pwd, salt)
 
     return password
 }
